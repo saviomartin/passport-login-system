@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background: #1E2023;
+      height: 100vh;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1{
+      font-size: 30px;
+      text-align: center;
+    }
+    form{
+      padding: 10px;
+    }
+    .button{
+      padding: 10px 30px;
+      background: #1A5CFF;
+      border-radius: 5px;
+      color: #000;
+      text-decoration: none;
+      box-shadow: 0 10px 30px -5px rgba(0,0,0,.05);
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    .center{
+      padding: 100px;
+      background: #18191c;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px -5px rgba(0,0,0,.05)
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>Hi <%= name %></h1>
+    <form action="/logout?_method=DELETE" method="POST">
+      <button type="submit" class="button">Log Out</button>
+    </form>
+  </div>
+</body>
+</html>
